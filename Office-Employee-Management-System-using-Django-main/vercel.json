@@ -1,0 +1,14 @@
+{
+    "builds":[{
+        "src":"Office-Employee-Management-System-using-Django-main/wsgi.py",
+        "use":"@vercel.python",
+        "config":{"maxlambdaSize":"15mb", "runtime": "python3.12.1"}
+    }],
+    "routes":[
+        {
+            "src":"/(.*)",
+            "dest":"Office-Employee-Management-System-using-Django-main/wsgi.py"
+        }
+    ]
+
+}
